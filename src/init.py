@@ -21,7 +21,6 @@ class Options():
 
         #model params
         parser.add_argument('-slice', '--slice', type=int, help='slice number', default='80',)
-        #parser.add_argument('--network', default='UNet', help='nnunet, UNet')
         parser.add_argument('-batch_size', type=int, default=4, help='batch size, depends on your machine')
         parser.add_argument('-in_channels', default=1, type=int, help='Channels of the input')
         parser.add_argument('-out_channels', default=1, type=int, help='Channels of the output')
