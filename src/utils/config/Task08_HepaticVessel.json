@@ -1,0 +1,14 @@
+{
+    "lr": 1e-4,
+    "labels": 3, 
+    "channels": 1,
+    "batch_size": 4,
+    "task": "Task08_HepaticVessel",
+    "dropout": 0.2,
+    "spacing": [1.5,1.5,2],
+    "a_min": -57,
+    "a_max": 164,
+    "b_min": 0.0,
+    "b_max": 1.0
+}
+  
