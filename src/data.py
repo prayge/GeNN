@@ -15,7 +15,7 @@ from utils import get_root
 opt = Options().parse()
 root_dir= get_root(opt.root_dir)
 
-class MedicalDecathlonDataModule(pl.LightningDataModule):
+class MSD(pl.LightningDataModule):
     def __init__(self, task, batch_size, train_val_ratio):
         super().__init__()
         self.task = task
