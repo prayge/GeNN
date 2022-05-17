@@ -8,7 +8,7 @@ class Options():
 
     def initialize(self,parser):
         #directory
-        parser.add_argument('-r', '--root',type=str, help='Root directory for dataset', default='D:\\MDS\\dataset')
+        parser.add_argument('-r', '--root_dir',type=str, help='Root directory for dataset', default='MONAI_DIR')
         parser.add_argument('-t', '--task',type=str, help='name of MSD Task', default='Task09_Spleen')
         parser.add_argument('-trainfolder', '--trainfolder',type=str, help='folder name which contains training images', default='imagesTr')
         parser.add_argument('-labelfolder', '--labelfolder',type=str, help='folder name which contains training image labels', default='labelsTr')
