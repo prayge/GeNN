@@ -1,0 +1,14 @@
+{
+    "lr": 1e-4,
+    "labels": 3, 
+    "channels": 2,
+    "batch_size": 8,
+    "task": "Task05_Prostate",
+    "dropout": 0.2,
+    "spacing": [1.0,1.0,1.0],
+    "a_min": 0,
+    "a_max": 2000,
+    "b_min": 0.0,
+    "b_max": 1.0
+}
+  

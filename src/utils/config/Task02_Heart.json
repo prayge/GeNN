@@ -1,0 +1,14 @@
+{
+    "lr": 1e-4,
+    "labels": 1, 
+    "channels": 1,
+    "batch_size": 16,
+    "task": "Task02_Heart",
+    "dropout": 0.2,
+    "spacing": [1.0,1.0,1.0],
+    "a_min": -57,
+    "a_max": 164,
+    "b_min": 0.0,
+    "b_max": 1.0
+}
+  

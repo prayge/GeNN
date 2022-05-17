@@ -1,0 +1,14 @@
+{
+    "lr": 1e-4,
+    "labels": 2, 
+    "channels": 1,
+    "batch_size": 8,
+    "task": "Task06_Lung",
+    "dropout": 0.2,
+    "spacing": [1.5,1.5,2],
+    "a_min": -57,
+    "a_max": 164,
+    "b_min": 0.0,
+    "b_max": 1.0
+}
+  
