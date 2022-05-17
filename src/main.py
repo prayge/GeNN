@@ -27,7 +27,7 @@ def main():
 
     data = MSD(
         task='Task04_Hippocampus',
-        batch_size=2,
+        batch_size=1,
         train_val_ratio=0.8,
     )
 
