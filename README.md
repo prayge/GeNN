@@ -67,7 +67,7 @@ Pretrained UNet models are provided, labeled as `best_metric_model-{task}-{epoch
 
 The model is a 3D UNet encoder-decoder CNN with 5 layers comprising of 16,32,64,128 and 256 channels. Each convolutional operation at each later is set to a stride of 2x2x2 and the network has a residual unit count of 2 with batch normalization. The model uses Dice Loss as a loss function and Dice Score as a metric for accuracy between ground truth and predicted image. It is trained for 600 epochs and validated at each epoch with a batch size of 4 to calculate dice score at each epoch. It was seen that the mean dice and average loss tapered at ~270 epochs, so further testing is needed to determine best epoch count for optimal performance and efficiency
 
-![Spleen Training](./val/trainingPlot.png)
+![Spleen Training](./src/val/trainingPlot.png)
 
 
 ## Results
@@ -84,10 +84,10 @@ best mean dice: 0.9509 at epoch: 592
 
 This prediction is taken at slice 80 of a training image so that both the abdominal CT can be shown and the ground truth supplied with the dataset against the predicted image by the GeNN. THe first spleen prediction has a marginal difference to the ground truth due to transformation of the training image and clear boundaries within the CT that cause the foreground to be different density allowing for clearer segmentation of the region of interest. Prediction 2 however, has a larger overlap than prediction 1 due to the scaled intensity of the foreground being similar to the region of interest making it more difficult for feature extraction, however still performs extremely well. 
 
-![Spleen Prediction 1](./val/spleenPred1.png)
+![Spleen Prediction 1](./src/val/spleenPred1.png)
 
 
-![Spleen Prediction 2](./val/spleenPred2.png)
+![Spleen Prediction 2](./src/val/spleenPred2.png)
 
 ## Future Works
 
